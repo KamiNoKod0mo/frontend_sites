@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat";
+}
+
+.container{
+	max-width: 1200px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+.fundo_inicial{
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	top: -10px;
+	z-index: -999;
+}
+
+/*----------------------------------*/
+
+header{
+	margin-bottom: 60px;
+	margin-top: 10px;
+}
+
+div.logo{
+	float: left;
+}
+
+div.logo img{
+	width: 100px;
+}
+
+nav.um{
+	float: right;
+	margin-top: 30px;
+	position: relative;
+	
+}
+
+nav.dois{
+	float: right;
+	margin-top: 30px;
+	position: relative;
+	width: 45%;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0 15px;
+	font-weight: bold;
+	float: right;
+
+}
+div.mobi{
+	float: right;
+	margin-top: 30px;
+	margin-right: 15px;
+	display: none;
+}
+
+/*----------------------------------*/
+div .texto{
+	float: left;
+	width: 40%;
+
+}
+
+div.conteudo h3{
+	margin-top: 65px;
+	color: #f14a68;
+	font-size: 20px;
+}
+
+div.conteudo ul{
+	margin-top: 27px;
+	list-style-position: inside;
+}
+div.conteudo li{
+	padding: 5px;
+}
+
+.cta input{
+	margin-top: 50px;
+	background-color: #003456;
+	width: 280px;
+	height: 50px;
+	color: white;
+	border-radius: 20px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+div .imagens{
+	background-color: brown;
+	width: 53%;
+	height: 370px;
+	border-radius: 30px;
+	float: right;
+	position: relative;
+	right: 15px;
+	top: 30px;
+}
+
+/*----------------------------------*/
+
+section.social{
+	text-align: center;
+	margin-top: 146px;
+	font-weight: Regular;
+	font-size: 18px;
+	position: relative;
+}
+
+section.social li {
+	display: inline-block;
+	padding-right: 28px;
+	margin-top: 30px;
+	margin-bottom: 31px;
+}
+
+/*----------------------------------*/
+section.equipe{
+	background: url('imgs/rectangle4.png');
+	width: 100%;
+	height: 670px;
+	padding: 70px;
+	
+}
+section.equipe h2{
+	text-align: center;
+}
+
+div.card{
+	float: left;
+	width: 31%;
+	display: inline-block;
+	margin-top: 90px;
+	margin-right: 21px;
+}
+
+div.img-eq{
+	width: 300px;
+	height: 300px;
+	background: cyan;
+	border-radius: 50%;
+	margin: 0 auto;
+
+}
+p.nome{
+	text-align: center;
+	font-weight: bolder;
+	margin-top: 13px;
+	font-size: 20px;
+}
+p.desc{
+	text-align: center;
+	margin-top: 13px;
+	font-size: 15px;
+}
+
+
+/*----------------------------------*/
+footer{
+	width: 100%;
+	height: 210px;
+	background-color: #003456;
+	color: white;
+	font-size: 16px;
+	position: relative;
+	bottom: 0;
+}
+
+.infos {
+	padding-top: 50px;
+}
+.infos p{
+	padding-bottom: 19px;
+}
+
+.linha{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+div.traco{
+	background: white;
+	width: 100%;
+	height: 2px;
+	margin-bottom: 15px;
+}
+
+/*----------------------------------*/
+
+@media screen and (max-width: 850px){
+	.fundo_inicial{
+		height: 1000px;
+	}
+
+	nav.um,nav.dois, nav li{
+		display: none;
+	}
+	div.mobi{
+		display: block;
+	}
+
+	div.texto{
+		width: 100%;
+	}
+
+	div.title, div.cta{
+		text-align: center;
+		font-size: 14px;
+	}
+	div.texto{
+		
+	}
+	div .imagens{
+		width: 100%;
+		margin: 0 auto;
+		right: 0px;
+	}
+
+	section.social h2{
+		font-size: 18px;
+	}
+
+	section.equipe{
+		height: 1400px;
+	}
+
+	div.card{
+		width: 100%;
+		margin-top: 30px;
+	}
+	p.nome{
+		font-size: 16px;
+	}
+	p.desc{
+		font-size: 13px;
+	}
+	footer{
+		font-size: 13px;
+	}
+
+	
+}
+
+
+
