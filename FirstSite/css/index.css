@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*classes auxiliarees */
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.w60{
+    width: 60%;
+    float: left;
+}
+.w40{
+    width: 40%;
+    float: left;
+}
+.w33{
+    width: 33.3%;
+    float: left;
+}
+.w50{
+    width: 50%;
+    float: left;
+}
+.center{
+    text-align: center;
+}
+
+.clear{
+    clear: both;
+}
+:root{
+    --corpadrao: black;
+}
+/*Classes do site*/
+.logo a{
+    color: var(--corpadrao);
+    text-decoration: none;
+}
+.logo{
+    float: left;
+}
+.logo h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+nav.menu-mobile h2{
+    cursor: pointer;
+}
+nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 999;
+    text-align: center;
+}
+nav.menu-mobile li{
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+nav.menu-mobile li.selected{
+    background-color: rgb(225, 225, 225);
+}
+nav.menu-mobile a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+nav.menu-desktop li.selected{
+    font-weight: bold ;
+}
+nav.menu-desktop{
+    float: right;
+}
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: lighter;
+}
+nav.menu-desktop li > a{
+    color: black;
+    text-decoration: none;
+}
+nav.menu-desktop a:hover{
+    text-decoration: underline;
+}
+
+/*Sessão main*/
+section.main-bg{
+    width: 100%;
+    background-image: url('../image/drag.jpg');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 0 100px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+}
+section.main-bg >div.container{
+    position: relative;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+section.main-bg h2{
+    color: #52aaa7;
+    font-size: 40px;
+    font-weight: normal;
+}
+section.main-bg p{
+    text-align: left;
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+section.diferenciais{
+    padding: 30px 0;
+    text-align: center;
+}
+.line-text{
+    color: #52aaa7;
+    display: inline-block;
+    position: relative;
+}
+.line-text > div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #52aaa7;
+}
+.line-text h2{
+    font-weight: normal;
+    font-size: 27px;
+}
+.icone{
+    margin-top: 30px;
+}
+.box-icone-single{
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.box-icone-single h2{
+    font-size: 40px;
+}
+.box-icone-single p{
+    color: #646464;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+section.sobre-eq{
+    padding:30px 0;
+    background-color: rgb(225, 225, 225);
+}
+section.sobre-eq > .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;/*NOvo*/
+    height: 500px;
+}
+.equipe-coin{
+    width: 50%;
+}
+.sobre-coin{
+    width: 50%;
+}
+.sobre-coin p{
+    color: black;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.avatar-box{
+    margin-top: 15px;
+}
+.img-avatar{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('../image/foto.png');
+}
+.descricao-avatar{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    bottom: 20px;
+}
+.descricao-avatar h3{
+    color: rgb(30, 30, 30);
+    font-weight: normal;
+    font-style: italic;
+}
+.descricao-avatar p{
+    color: rgb(30, 30, 30);
+    font-weight: normal;
+    font-style: lighter;
+}
+
+section.inscricao{
+    background-color: #52aaa7;
+    padding: 20px 0;
+}
+.inscricao-text{
+    font-weight: normal;
+    color: white;
+}
+.inscricao-form input[type=text]{
+    width: calc(100% - 120px);
+    height: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+.inscricao-form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background-color: #1d6c64;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+section.cards{
+    padding: 30px 0;
+}
+.card-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+    
+}
+.card-single img{
+    width: 100%;
+}
+.card-single h3{
+    font-weight: normal;
+    font-size: 19px;
+    margin-top: 5px;
+}
+.card-single p {
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    margin: 10px 0;
+}
+footer.footer1{
+    background-color: #52aaa7;
+    padding: 20px;
+    color: white;
+}
+footer.footer1 h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+footer.footer1 p{
+    margin-top: 8px;
+    font-weight: lighter;
+}
+footer.footer1 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+div.group-icons a{
+    font-size: 18px;
+    display: inline-block;
+    margin:15px 10px;
+}
+footer.footer2{
+    padding: 15px 0;
+    background-color: #237a70;
+    text-align: center;
+    color: white;
+}
+
+/*Pagina sobre*/
+section.title-page{
+    padding: 30px;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+section.title-page h2{
+    color: #44D4C5;
+    font-size: 35px;
+    font-weight: normal;
+}
+section.title-page p {
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+}
+section.title-page > .container{
+    position: relative;
+    z-index: 101;
+}
+.overlay__title-page{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.4);
+    left: 0;
+    top: 0;
+    z-index: 100;
+    position: absolute;
+}
+/*noticia */
+section.sobre__noticia{
+    padding: 30px 0;
+}
+.sobre__single__noticia img{
+    max-width: 100%;
+    float: left;
+    width: 40%;
+}
+.sobre__single__noticia p{
+    float: left;
+    padding: 10px 15px;
+    width: 60%;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.paragrafo__noticia__single{
+    margin-top: 15px;
+}
+.paragrafo__noticia__single p {
+    margin-top: 8px;
+}
+/*Efeito paralax*/
+section.paralax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url('../image/drag.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+section.paralax h2.chamada-pa{
+    border: 1px solid #44D4C5;
+    padding: 5px 8px;
+    color: #44D4C5;
+    font-size: 18px;
+    display: inline-block;
+}
+section.paralax p{
+    color: white;
+    margin-top: 10px;
+}
+
+section.equipe{
+    padding: 40px 0;
+}
+.equipe-cir{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.equipe-cir-single{
+    text-align: center;
+    padding: 0 20px;
+    width: 33.3%;
+}
+.equipe-cir-single h3{
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.equipe-cir-single p{
+    font-weight: lighter;
+}
+.avatar-single{
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+.avatar-single-cont{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ccc;
+    background-image: url('../image/foto.png');
+    background-size: 100% 100%;
+}
+section.sobre__final{
+    background: rgb(230, 230, 230);
+    border-top: 2px solid rgb(210, 210, 210);
+    padding: 20px 0;
+}
+section.sobre__final p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.card-text{
+    margin-top: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.card-text img{
+    max-width: 100%;
+}
+.card-text h3{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+section.contato{
+    padding: 30px 0;
+    min-height: 600px;
+}
+section.contato .w50,
+section.contato .w100{
+    padding-right:0 10px;
+}
+.formulario form{
+    margin-top: 10px;
+}
+.formulario h2{
+    background: #DDDDDD;
+    text-align: center;
+    color: #ACAC90;
+    font-size: 17px;
+    font-weight: normal;
+    border-left: 5px solid #CCCCCC;
+    padding: 4px 0;
+}
+.formulario input[type=text],
+.formulario input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+.formulario textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    resize: vertical;
+}
+.tags-form{
+    padding-left: 50px;
+}
+.tags-form h2{
+    font-weight: normal;
+}
+.tags-form p {
+    font-weight: lighter;
+}
+.tags-form p.tag-contato{
+    color: white;
+    background: #249B8F;
+    text-align: center;
+    margin-top: 6px;
+    padding: 8px 4px;
+}
+@media screen and (max-width:768px) {
+    .w50,.w33,.w60,.w40,.w100{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .box-icone-single{
+        width: 100%;
+    }
+    .equipe-coin{
+        width: 100%;
+    }
+    .sobre-coin{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .card-single{
+        width: 100%;
+    }
+    footer.footer1{
+        text-align: center;
+    }
+    .sobre__single__noticia img{
+        width: 100%;
+    }
+    .sobre__single__noticia p{
+        width: 100%;
+        padding: 0;
+        margin-top: 8px;
+    }
+    .equipe-cir-single{
+        padding: 0 8px;
+        width: 100%;
+    }
+    .formulario input[type=text],
+    .formulario input[type=email]{
+        margin-bottom: 8px;
+    }
+    .formulario textarea{
+        margin-bottom: 0;
+    }
+    .tags-form{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .card-single{
+        padding: 10px;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.menu-desktop{
+        display: none;
+    }
+}
+@media screen and (max-width:1280px) {
+    section.contato{
+        min-height: 0px;
+    }
+}
+
+
+
+
+
+
+
